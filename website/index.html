@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+<title>Main page</title>
+<div id="d1">
+Hello
+</div>
+<div id="d2">
+Goodbye
+</div>
+<p>
+<input type="button" id="but1" value="change color"onclick="changecolor()">
+<input type="button" id="but2"value="change text" onclick="changetext()">
+</p>
+
+
+<script>
+function changecolor(){
+var dd1 = document.getElementById("d1");
+var dd2 = document.getElementById("d2");
+
+dd1.className = "blueback";
+dd2.className = "yellowback";
+}
+
+function changetext(){
+var dd1=document.getElementById("d1");
+var dd2=document.getElementById("d2");
+
+dd1.innerHTML="Bonjour";
+dd2.innerHTML="Sayonara";
+}
+</script>
+
+
+<style>
+
+.yellowback{
+background-color:lightgreen;
+}
+
+.blueback{
+background-color:lightblue;
+}
+
+h1{
+color: purple;
+background-color: pink;
+}
+
+#img{
+float:right;
+}
+
+#d1{
+ 
+position:relative; left:80px; top:480px;
+}
+#d2{
+position:relative; left:80px; top:490px;
+}
+#but1{
+position:relative; left:80px; top:495px;
+}
+#but2{
+position:relative; left:85px; top:495px;
+}
+</style>
+
+
+
+</head>
+<body>
+<center><h1>WELCOME</h1></center>
+<h3><marquee direction="left" scrollamount="8"scrolldelay="20">Hiii there!!!</marquee></h3>
+<hr>
+<br><br>
+
+<img src="https://lh6.googleusercontent.com/-Du5sjWWmXcU/TplK6DYjlnI/AAAAAAABHbY/5Di2rH_nEtY/w800-h400-c/P1050401_stitch.jpg" id="img" width="400"height="200">
+
+<br>
+<br>
+<br/>Hiii,I am Jayalakshmi ......welcome to my small website.<br/>
+<br>
+<details>
+<summary><b>My Childhood</b></summary>
+I grew up in India.I love the greenery around my house.
+</details>
+
+Here is a link that shows some of the flowers in my garden<mark><a href="table.html">click here</a></mark>
+
+</body>
+</html>
